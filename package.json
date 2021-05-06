@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Office of Digital Innovation website",
   "main": "index.js",
-  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "build": "npx @11ty/eleventy --input=./pages --output=_site",
