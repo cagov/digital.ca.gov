@@ -1,4 +1,5 @@
 // const pluginRss = require("@11ty/eleventy-plugin-rss");
+const CleanCSS = require("clean-css");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.htmlTemplateEngine = "njk";
@@ -15,6 +16,10 @@ module.exports = function(eleventyConfig) {
     }).reverse();
   });
   // eleventyConfig.addPlugin(pluginRss);
+
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   return {
     htmlTemplateEngine: "njk",
