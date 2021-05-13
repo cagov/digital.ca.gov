@@ -25,6 +25,8 @@
   {% include "../src/components/alert/style.css" %}
   {% include "../src/components/branding/style.css" %}
   {% include "../src/components/footer/style.css" %}
+  {% include "../src/components/highlight/style.css" %}
+  {% include "../src/components/highlight-img/style.css" %}
   {% endset %}
   <!-- feed it through our cssmin filter to minify -->
   <style>
@@ -59,8 +61,12 @@
 
 
   <main>
-
+   
     {{ content | safe }}
+  <div class="container">
+    {% include "../src/components/highlight/highlight.html" %}
+    {% include "../src/components/highlight-img/highlight-img.html" %}
+  </div>
   </main>
 
 

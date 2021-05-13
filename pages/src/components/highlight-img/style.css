@@ -1,0 +1,62 @@
+.cagov-highlight-img {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px 2px rgb(0 0 0 / 14%);
+  background-color: #fff;
+  border-bottom: 8px solid #ff8000;
+  padding: 32px 40px 40px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* body */
+.highlight-body {
+  flex: 2 450px;
+}
+
+/* title */
+.highlight-title h2,
+.highlight-title h3,
+.highlight-title h4 {
+  font-size: 1.5rem !important;
+  color: #1f2574 !important;
+}
+
+/* text */
+.highlight-body p {
+  margin-bottom: 1rem;
+}
+
+/* image */
+.highlight-image {
+  flex: 1 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.highlight-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* button */
+.default-button {
+  display: inline-block;
+  color: #ffffff !important;
+  background-color: #004abc;
+  border-radius: 5px;
+  padding: 0.95rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700 !important;
+  transition: all 0.3s ease;
+}
+.default-button:hover {
+  background-color: #0f1e6b;
+}
+.default-button:active {
+  background-color: #000000;
+}
+.default-button:focus {
+  outline: 2px solid #fec02f;
+}
