@@ -1,9 +1,10 @@
 # digital.ca.gov
 Office of Digital Innovation website
 
+
 ## Blog
 
-The blog originally on news.alpha.ca.gov has been moved here so it is deployed to <a href="https"//digital.ca.gov/blog/">digital.ca.gov/blog/</a>
+Our blog originally on news.alpha.ca.gov has been moved here so it is deployed to <a href="https"//digital.ca.gov/blog/">digital.ca.gov/blog/</a>
 
 ### Writing posts
 
