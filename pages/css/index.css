@@ -824,67 +824,55 @@ li.list-group-item.alpha-footer {
   padding: 5px 10px 5px 10px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center; }
-
-.branding a {
-  color: black;
-  text-decoration: none; }
-
-.branding .logo-text {
-  padding-left: 5px;
-  display: inline-block; }
-
-.branding .logo-text .logo-state {
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
-  height: 20px;
-  line-height: 1.2em;
-  transition: all .3s;
-  display: block; }
-
-.branding .logo-text .logo-dept {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  height: 24px;
-  line-height: 1.2em;
-  transition: all .3s;
-  display: block; }
-
-.mobile-search {
-  margin-left: auto; }
-
-.mobile-search button.search-btn, .mobile-menu button.menu-btn {
-  border: none;
-  background: transparent;
-  overflow: visible;
-  padding: 10px 10px;
-  margin-right: 10px;
-  color: #004ABC; }
-
-.mobile-search button.search-btn:hover, .mobile-menu button.menu-btn:hover {
-  color: #1E1569; }
-
-.mobile-search button.search-btn:focus, .mobile-menu button.menu-btn:focus {
-  color: #1E1569;
-  outline: 2px solid #fec02f; }
-
-.mobile-search button.search-btn svg, .mobile-menu button.menu-btn svg {
-  position: relative;
-  top: 3px; }
-
-.mobile-search button.search-btn svg, .mobile-menu button.menu-btn svg {
-  margin-right: 5px; }
-
-.mobile-search button.search-btn .blue, .mobile-menu button.menu-btn .blue {
-  fill: #004ABC; }
-
-.mobile-search button.search-btn:hover .blue, .mobile-menu button.menu-btn:hover .blue {
-  fill: #1E1569; }
+  flex-direction: column; }
+  .branding a {
+    color: #000;
+    text-decoration: none; }
+  .branding .logo-text {
+    padding-left: 5px;
+    display: inline-block; }
+    .branding .logo-text .logo-state {
+      font-size: 1rem;
+      margin: 0;
+      padding: 0;
+      height: 20px;
+      line-height: 1.2em;
+      transition: all .3s;
+      display: block; }
+    .branding .logo-text .logo-dept {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+      height: 24px;
+      line-height: 1.2em;
+      transition: all .3s;
+      display: block; }
+  .branding .mobile-search {
+    margin-left: auto; }
+  .branding button.search-btn, .branding button.menu-btn {
+    border: none;
+    background: transparent;
+    overflow: visible;
+    padding: 10px 10px;
+    margin-right: 10px;
+    color: #004abc; }
+    .branding button.search-btn:hover, .branding button.menu-btn:hover {
+      color: #1e1569; }
+      .branding button.search-btn:hover .blue, .branding button.menu-btn:hover .blue {
+        fill: #1e1569; }
+    .branding button.search-btn:focus, .branding button.menu-btn:focus {
+      color: #1e1569;
+      outline: 2px solid #fec02f; }
+    .branding button.search-btn svg, .branding button.menu-btn svg {
+      position: relative;
+      top: 3px; }
+    .branding button.search-btn .blue, .branding button.menu-btn .blue {
+      fill: #004abc; }
 
 @media (min-width: 768px) {
+  .branding {
+    flex-direction: row; }
   .mobile-search {
     display: none; }
   .mobile-menu {
@@ -895,54 +883,80 @@ li.list-group-item.alpha-footer {
   background-color: #f9f9fa;
   padding: 5px 0 5px 0;
   width: 100%; }
-
-.official-header .container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  box-sizing: border-box;
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 10px 0 10px; }
-
-.official-header svg {
-  padding: 0; }
-
-.official-header svg .ca {
-  fill: #fec02f; }
-
-.official-header svg .gov {
-  fill: #0f1e6b; }
-
-.official-tag {
-  margin: 0;
-  margin-left: 20px;
-  font-size: 0.95rem; }
-
-@media (min-width: 768px) {
-  .official-languages {
-    margin-left: auto; } }
-
-.official-languages a {
-  color: #000;
-  padding: 0 .5rem 0 .5rem; }
-
-.official-languages a:hover {
-  color: #1E1569; }
-
-.official-languages button.offcial-more {
-  padding-right: 0;
-  border: none;
-  text-decoration: underline;
-  background-color: #fff; }
-
-.official-languages button.offcial-more:hover {
-  color: #1E1569; }
-
-.official-languages .caret-down svg {
-  padding: 0 0 0 0;
-  width: 20px;
-  height: 18px;
-  overflow: visible; }
+  .official-header .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px; }
+  .official-header .ofiicial-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+  .official-header svg {
+    padding: 0; }
+    .official-header svg .ca {
+      fill: #fec02f; }
+    .official-header svg .gov {
+      fill: #1e1569; }
+  .official-header .official-tag {
+    margin: 0 20px; }
+  .official-header .official-languages a {
+    color: #000;
+    padding: 0 0.5rem 0 0.5rem; }
+    .official-header .official-languages a:hover {
+      color: #1e1569; }
+  .official-header .official-languages {
+    display: flex;
+    flex-wrap: wrap; }
+    .official-header .official-languages .dropdown {
+      position: relative; }
+    .official-header .official-languages button.offcial-more {
+      padding-right: 0;
+      border: none;
+      text-decoration: underline;
+      background-color: #fff;
+      transition: transform .3s; }
+      .official-header .official-languages button.offcial-more:hover {
+        color: #1e1569; }
+      .official-header .official-languages button.offcial-more[aria-expanded="false"] .caret-down {
+        transition: all .3s; }
+        .official-header .official-languages button.offcial-more[aria-expanded="false"] .caret-down svg {
+          padding: 0 0 0 0;
+          width: 20px;
+          height: 18px;
+          overflow: visible;
+          position: relative;
+          right: 5px; }
+      .official-header .official-languages button.offcial-more[aria-expanded="true"] .caret-down {
+        transition: transform .3s; }
+        .official-header .official-languages button.offcial-more[aria-expanded="true"] .caret-down svg {
+          padding: 0 0 0 0;
+          width: 20px;
+          height: 18px;
+          position: relative;
+          top: 8px;
+          left: 4px;
+          overflow: visible;
+          transform: rotate(180deg); }
+    .official-header .official-languages .dropdown-content {
+      background-clip: padding-box;
+      background-color: #fff;
+      border: 1px solid #004abc;
+      border-radius: 0.25rem;
+      padding: 15px;
+      position: absolute;
+      right: 0px;
+      top: 100%;
+      text-align: left;
+      z-index: 1000;
+      min-width: 150px;
+      display: none; }
+      .official-header .official-languages .dropdown-content.show {
+        display: flex;
+        flex-direction: column; }
 
 /*# sourceMappingURL=index.css.map */
