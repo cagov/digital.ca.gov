@@ -19,6 +19,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+
+		.cagov-logo {
+			margin:0 10px;
+		}
 	}
 
 	svg {
@@ -32,7 +36,7 @@
 	}
 
 	.official-tag {
-		margin: 0 20px;
+		margin: 0 10px;
 	}
 
 	.official-languages a {

@@ -824,59 +824,97 @@ li.list-group-item.alpha-footer {
   padding: 5px 10px 5px 10px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column; }
-  .branding a {
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; }
+  .branding .branding-logo {
+    flex: 1 0 650px;
     color: #000;
     text-decoration: none; }
-  .branding .logo-text {
-    padding-left: 5px;
-    display: inline-block; }
-    .branding .logo-text .logo-state {
-      font-size: 1rem;
-      margin: 0;
-      padding: 0;
-      height: 20px;
-      line-height: 1.2em;
-      transition: all .3s;
-      display: block; }
-    .branding .logo-text .logo-dept {
-      font-size: 1.75rem;
-      font-weight: 700;
-      margin: 0;
-      padding: 0;
-      height: 24px;
-      line-height: 1.2em;
-      transition: all .3s;
-      display: block; }
-  .branding .mobile-search {
-    margin-left: auto; }
-  .branding button.search-btn, .branding button.menu-btn {
+    .branding .branding-logo .logo-text {
+      padding-left: 5px;
+      display: inline-block; }
+      .branding .branding-logo .logo-text .logo-state {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+        height: 20px;
+        line-height: 1.2em;
+        transition: all 0.3s;
+        display: block; }
+      .branding .branding-logo .logo-text .logo-dept {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        height: 24px;
+        line-height: 1.2em;
+        transition: all 0.3s;
+        display: block; }
+  .branding .mobile-icons {
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0px;
+    top: 20px; }
+  .branding button.search-btn,
+  .branding button.menu-btn {
     border: none;
     background: transparent;
     overflow: visible;
     padding: 10px 10px;
     margin-right: 10px;
     color: #004abc; }
-    .branding button.search-btn:hover, .branding button.menu-btn:hover {
+    .branding button.search-btn:hover,
+    .branding button.menu-btn:hover {
       color: #1e1569; }
-      .branding button.search-btn:hover .blue, .branding button.menu-btn:hover .blue {
+      .branding button.search-btn:hover .blue,
+      .branding button.menu-btn:hover .blue {
         fill: #1e1569; }
-    .branding button.search-btn:focus, .branding button.menu-btn:focus {
+    .branding button.search-btn:focus,
+    .branding button.menu-btn:focus {
       color: #1e1569;
       outline: 2px solid #fec02f; }
-    .branding button.search-btn svg, .branding button.menu-btn svg {
+    .branding button.search-btn svg,
+    .branding button.menu-btn svg {
       position: relative;
-      top: 3px; }
-    .branding button.search-btn .blue, .branding button.menu-btn .blue {
+      top: 1px; }
+    .branding button.search-btn .blue,
+    .branding button.menu-btn .blue {
       fill: #004abc; }
+  .branding .search-container {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    width: 30%; }
+    .branding .search-container #site-search {
+      display: flex;
+      position: relative; }
+      .branding .search-container #site-search .search-textfield {
+        border: 1px solid;
+        border-color: #1e1569;
+        border-radius: 4px;
+        padding: 10px;
+        width: 100%; }
+      .branding .search-container #site-search .search-submit {
+        right: 0;
+        outline-offset: -2px;
+        position: absolute;
+        background-color: #1e1569;
+        border: none;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        padding: 6px 10px 2px 10px; }
+        .branding .search-container #site-search .search-submit svg path {
+          fill: #fff; }
 
 @media (min-width: 768px) {
-  .branding {
-    flex-direction: row; }
-  .mobile-search {
-    display: none; }
-  .mobile-menu {
-    display: none; } }
+  .mobile-icons {
+    display: none !important; }
+  .search-container {
+    display: block !important; } }
 
 /*official*/
 .official-header {
@@ -896,6 +934,8 @@ li.list-group-item.alpha-footer {
     display: flex;
     flex-wrap: wrap;
     align-items: center; }
+    .official-header .ofiicial-logo .cagov-logo {
+      margin: 0 10px; }
   .official-header svg {
     padding: 0; }
     .official-header svg .ca {
@@ -903,7 +943,7 @@ li.list-group-item.alpha-footer {
     .official-header svg .gov {
       fill: #1e1569; }
   .official-header .official-tag {
-    margin: 0 20px; }
+    margin: 0 10px; }
   .official-header .official-languages a {
     color: #000;
     padding: 0 0.5rem 0 0.5rem; }
