@@ -69,12 +69,15 @@
         </div>
       </div>
     </div>
-  </footer>
-  <script>
-  {% include "../../src/components/alert/index.js" %}
-  {% include "../../src/components/utility-header/index.js" %}
-  {% include "../../src/components/branding/index.js" %}
-  </script>
+
+<!-- capture the JS content as a Nunjucks variable -->
+{% set js %}
+  {% include "../../_site/js/built.js" %}
+{% endset %}
+<!--feed it through our jsmin filter to minify -->
+<script type="module">
+  {{ js | safe }}
+</script>
 
   <script>
     window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
