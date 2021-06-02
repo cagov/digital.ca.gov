@@ -54,22 +54,10 @@
   <main>
     {{ content | safe }}
   </main>
-  <footer>
-    <div class="alpha-footer footer mt-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="flex-fill list list-group list-group-flush list-group-horizontal-lg">
-              <li class="alpha-footer list-group-item">
-                <a href="/contact-us/">Contact Us</a>
-              </li>
-            </ul>
-            <p>Official California State Government Website</p>
-          </div>
-        </div>
-      </div>
-    </div>
 
+  {% include "../../src/components/site-footer/site-footer.html" %}
+  {% include "../../src/components/footer/footer.html" %}
+  
 <!-- capture the JS content as a Nunjucks variable -->
 {% set js %}
   {% include "../../_site/js/built.js" %}
