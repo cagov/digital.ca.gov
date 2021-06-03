@@ -17,13 +17,17 @@
   },
   "scripts": {
     "rollup": "rollup --config src/rollup.config.js",
+    "rollup:watch": "rollup --watch --config src/rollup.config.js",
+    "regen": "npx @11ty/eleventy --input=./pages --output=_site",
     "build": "npm run rollup && npx @11ty/eleventy --input=./pages --output=_site",
     "start": "npm run rollup && npx @11ty/eleventy --serve --input=./pages --output=_site",
+    "serve": "npx @11ty/eleventy --serve --input=./pages --output=_site",
     "build-task:scss-compile": "node-sass-chokidar --source-map true src/css/ -o pages/css/",
     "build-task:autoprefixer": "postcss pages/css/*.css --use autoprefixer -d dist/css",
-    "sass:build": "npm-run-all -p build-task:*",
-    "sass:watch": "chokidar 'src/scss/**/*.scss' -c 'npm run sass:build'",
-    "dev": "npm-run-all -p sass:*"
+    "sass:build": "npm-run-all -p build-task:* regen",
+    "sass:watch": "chokidar 'src/**/*.scss' -c 'npm run sass:build'",
+    "build:watch": "npx @11ty/eleventy --watch --input=./pages --output=_site",
+    "dev": "npm-run-all -p sass:build sass:watch build:watch rollup:watch serve"
   },
   "repository": {
     "type": "git",
