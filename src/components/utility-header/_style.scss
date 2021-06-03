@@ -1,4 +1,5 @@
 /*official*/
+
 .official-header {
 	background-color: $gray-100;
 	padding: 5px 0 5px 0;
@@ -115,3 +116,14 @@
 		}
 	}
 }
+
+
+/* sticky header */
+@media (min-width: 768px) {
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 99;
+	  }
+}
+

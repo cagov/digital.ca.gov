@@ -1,14 +1,18 @@
 /* branding */
 .branding {
 	box-sizing: border-box;
-	max-width: $w-lg;
-	margin: 0 auto;
-	padding: 5px 0 5px 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
-	position: relative;
+	background-color: $white;
+	.container {
+		max-width: $w-lg;
+		margin: 0 auto;
+		padding: 5px 0 5px 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+		position: relative;
+	}
+
 	.logo-img {
 		margin-left: 10px;
 	}
@@ -108,7 +112,6 @@
 			left: 0;
 			border-top: 1px solid $gray-300;
 			border-bottom: 1px solid $gray-300;
-
 		}
 
 		#site-search {
@@ -164,7 +167,8 @@
 }
 
 @media (min-width: 768px) {
-	.mobile-icons, .search-close {
+	.mobile-icons,
+	.search-close {
 		display: none !important;
 	}
 	.search-container {
