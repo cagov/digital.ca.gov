@@ -1038,7 +1038,7 @@ li.list-group-item.alpha-footer {
         display: flex;
         flex-direction: column; }
 
-/* stiky header */
+/* sticky header */
 @media (min-width: 768px) {
   header {
     position: sticky;
