@@ -3,7 +3,7 @@ let btnsearch = document.querySelector('.search-btn');
 let btnsearchclose = document.querySelector('.search-close');
 // On Load
 window.onload = detectmobile;
-
+btnsearch.setAttribute("aria-expanded", "false");
 
 // Search button click (mobile)
 btnsearch.addEventListener('click', event => {  
@@ -48,11 +48,10 @@ function detectmobile () {
 };
 
 
+
 // on resize function
 document.getElementsByTagName("BODY")[0].onresize = function() {
     var searchbox = document.querySelector('.search-container');
     searchbox.classList.remove("show");
-    detectmobile();
-    
+    detectmobile();   
 };
-
