@@ -6,12 +6,18 @@
 	.container {
 		max-width: $w-lg;
 		margin: 0 auto;
-		padding: 5px 0 5px 0;
+		padding: 5px 0 0 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		align-items: center;
 		position: relative;
+	}
+	.logo {
+		margin-bottom: 5px;
+		&:focus {
+			outline: 2px solid $secondary;
+		}
 	}
 
 	.logo-img {
@@ -24,7 +30,9 @@
 		margin-left: 10px;
 		margin-bottom: 10px;
 		margin-top: 10px;
-
+		&:focus {
+			outline: 2px solid $secondary;
+		}
 		.logo-text {
 			padding-left: 5px;
 			display: inline-block;
@@ -210,6 +218,12 @@
             top: 29px;
         }
     }
+
+	&:hover, &:focus {
+		span {
+			background: $primary-dark;
+		}
+	}
 
     &[aria-expanded="true"] {
         span:nth-child(1) {

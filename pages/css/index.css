@@ -824,12 +824,16 @@ li.list-group-item.alpha-footer {
   .branding .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 5px 0 5px 0;
+    padding: 5px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
     position: relative; }
+  .branding .logo {
+    margin-bottom: 5px; }
+    .branding .logo:focus {
+      outline: 2px solid #fec02f; }
   .branding .logo-img {
     margin-left: 10px; }
   .branding .branding-logo {
@@ -839,6 +843,8 @@ li.list-group-item.alpha-footer {
     margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 10px; }
+    .branding .branding-logo:focus {
+      outline: 2px solid #fec02f; }
     .branding .branding-logo .logo-text {
       padding-left: 5px;
       display: inline-block; }
@@ -975,6 +981,8 @@ li.list-group-item.alpha-footer {
       top: 22px; }
     .toggle-menu span:nth-child(4) {
       top: 29px; }
+  .toggle-menu:hover span, .toggle-menu:focus span {
+    background: #1e1569; }
   .toggle-menu[aria-expanded="true"] span:nth-child(1) {
     top: 12px;
     width: 0%;
