@@ -6,18 +6,18 @@
   <meta content="en" http-equiv="Content-Language">
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <meta content="width=device-width,initial-scale=1" name="viewport">
-  <meta content="ODigital COVID-19 Vaccine Record portal - State of California" name="author">
+  <meta content="Office of Digital Innovation - State of California" name="author">
   <link href="https://www.google-analytics.com" rel="preconnect">
   <meta content="#000000" name="theme-color">
-  <meta content="https://files.covid19.ca.gov/img/4-color-map.png" property="og:image">
+  <meta content="https://www.alpha.ca.gov/img/thumbnail.png" property="og:image">
   <meta content="630" property="og:image:height">
   <meta content="630" property="og:image:width">
-  <meta content="Digital COVID-19 Vaccine Record portal" property="og:title">
-  <meta content="Digital COVID-19 Vaccine Record portal" property="og:description">
-  <meta content="https://vaxrecord.cdt.ca.gov/" property="og:url">
+  <meta content="California Office of Digital Innovation" property="og:title">
+  <meta content="California Office of Digital Innovation (ODI)" property="og:description">
+  <meta content="https://digital.ca.gov/" property="og:url">
   <meta content="summary_large_image" name="twitter:card">
-  <title>Frequently Asked Questions – Digital COVID-19 Vaccine Record</title>
-  <meta content="Digital COVID-19 Vaccine Record portal" name="description">
+  <title>California Office of Digital Innovation</title>
+  <meta content="California Office of Digital Innovation (ODI)" name="description">
   <!-- capture the CSS content as a Nunjucks variable -->
   {% set css %}
   {% include "../css/index.css" %}
@@ -31,12 +31,32 @@
 <body>
   <header>
     {% include "../../src/components/utility-header/utility-header.html" %}
+    {% include "../../src/components/alert/alert.html" %}
     {% include "../../src/components/branding/branding.html" %}
+    {% include "../../src/components/navigation/navigation.html" %}
+    <!--<div class="official">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>State of California</p>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <!-- <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="float-left navbar-header">
+          <a href="/" class="navbar-brand navbar-left">CA.gov</a>
+        </div>
+      </div>
+    </nav> -->
   </header>
   <main>
     {{ content | safe }}
   </main>
 
+  {% include "../../src/components/site-footer/site-footer.html" %}
   {% include "../../src/components/footer/footer.html" %}
   
 <!-- capture the JS content as a Nunjucks variable -->
@@ -49,9 +69,9 @@
 </script>
 
   <script>
-   // window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
-   // ga('create', 'UA-154336791-1', 'auto');
-   // ga('send', 'pageview');
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-154336791-1', 'auto');
+    ga('send', 'pageview');
   </script>
   <script async defer src='https://www.google-analytics.com/analytics.js'></script>
 
