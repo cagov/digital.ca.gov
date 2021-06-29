@@ -750,7 +750,7 @@ li.list-group-item.alpha-footer {
 .cagov-alert {
   padding-top: 24px;
   padding-bottom: 24px;
-  background-color: #1e1569;
+  background-color: #064e66;
   min-height: 50px;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -782,7 +782,7 @@ li.list-group-item.alpha-footer {
     margin-top: 2rem !important;
     display: block; }
     .cagov-alert .button-white a {
-      color: #1e1569 !important;
+      color: #064e66 !important;
       padding: 0.725rem !important;
       background-color: #fff;
       font-size: 1.125rem;
@@ -793,7 +793,7 @@ li.list-group-item.alpha-footer {
       position: relative;
       top: -0.4rem; }
       .cagov-alert .button-white a:hover {
-        color: #1e1569 !important;
+        color: #064e66 !important;
         padding: 0.725rem !important;
         background-color: #fec02f !important;
         border-radius: 4px; }
@@ -824,11 +824,10 @@ li.list-group-item.alpha-footer {
   .branding .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 5px 0 0 0;
+    padding: 10px 0 0 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
     position: relative; }
   .branding .logo {
     margin-bottom: 5px; }
@@ -837,34 +836,30 @@ li.list-group-item.alpha-footer {
   .branding .logo-img {
     margin-left: 10px; }
   .branding .branding-logo {
-    flex: 1 0 650px;
     color: #000;
     text-decoration: none;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px; }
+    margin-left: 10px; }
     .branding .branding-logo:focus {
       outline: 2px solid #fec02f; }
     .branding .branding-logo .logo-text {
       padding-left: 5px;
       display: inline-block; }
-      .branding .branding-logo .logo-text .logo-state {
-        font-size: 1rem;
-        margin: 0;
-        padding: 0;
-        height: 20px;
-        line-height: 1.2em;
-        transition: all 0.3s;
-        display: block; }
       .branding .branding-logo .logo-text .logo-dept {
-        font-size: 1.75rem;
+        font-size: 1.2rem;
         font-weight: 700;
         margin: 0;
         padding: 0;
-        height: 24px;
-        line-height: 1.2em;
         transition: all 0.3s;
-        display: block; }
+        display: block;
+        margin-top: -3px; }
+      .branding .branding-logo .logo-text .logo-state {
+        font-size: .7rem;
+        margin: 0;
+        margin-top: 3px;
+        padding: 0;
+        transition: all 0.3s;
+        display: block;
+        letter-spacing: 2px; }
   .branding .mobile-icons {
     margin-left: auto;
     display: flex;
@@ -879,16 +874,16 @@ li.list-group-item.alpha-footer {
     overflow: visible;
     padding: 10px 10px;
     margin-right: 10px;
-    color: #004abc; }
+    color: #2f4c2c; }
     .branding button.search-btn:hover,
     .branding button.menu-btn:hover {
-      color: #1e1569; }
+      color: #064e66; }
       .branding button.search-btn:hover .blue,
       .branding button.menu-btn:hover .blue {
-        fill: #1e1569; }
+        fill: #064e66; }
     .branding button.search-btn:focus,
     .branding button.menu-btn:focus {
-      color: #1e1569;
+      color: #064e66;
       outline: 2px solid #fec02f; }
     .branding button.search-btn svg,
     .branding button.menu-btn svg {
@@ -896,7 +891,7 @@ li.list-group-item.alpha-footer {
       top: 1px; }
     .branding button.search-btn .blue,
     .branding button.menu-btn .blue {
-      fill: #004abc; }
+      fill: #2f4c2c; }
   .branding .search-container {
     display: none;
     position: absolute;
@@ -922,7 +917,7 @@ li.list-group-item.alpha-footer {
       position: relative; }
       .branding .search-container #site-search .search-textfield {
         border: 1px solid;
-        border-color: #1e1569;
+        border-color: #064e66;
         border-radius: 4px;
         padding: 10px;
         width: 100%;
@@ -931,26 +926,26 @@ li.list-group-item.alpha-footer {
         position: relative;
         right: 5px;
         outline-offset: -2px;
-        background-color: #1e1569;
-        border: 1px solid #1e1569;
+        background-color: #064e66;
+        border: 1px solid #064e66;
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
         padding: 7px 14px 4px 14px; }
         .branding .search-container #site-search .search-submit:hover {
-          background-color: #004abc;
-          border-color: #004abc; }
+          background-color: #2f4c2c;
+          border-color: #2f4c2c; }
         .branding .search-container #site-search .search-submit:focus {
           outline: 2px solid #fec02f; }
         .branding .search-container #site-search .search-submit svg path {
           fill: #fff; }
       .branding .search-container #site-search .search-close {
-        color: #1e1569;
+        color: #064e66;
         text-decoration: underline;
         border: none;
         background-color: #f9f9fa;
         padding: 0 15px 0 15px; }
         .branding .search-container #site-search .search-close:hover {
-          color: #004abc;
+          color: #2f4c2c;
           text-decoration: none; }
         .branding .search-container #site-search .search-close:focus {
           outline: 2px solid #fec02f; }
@@ -969,7 +964,7 @@ li.list-group-item.alpha-footer {
     position: absolute;
     height: 2px;
     width: 20px;
-    background: #004abc;
+    background: #2f4c2c;
     border-radius: 5px;
     opacity: 1;
     left: 10px;
@@ -982,7 +977,7 @@ li.list-group-item.alpha-footer {
     .toggle-menu span:nth-child(4) {
       top: 29px; }
   .toggle-menu:hover span, .toggle-menu:focus span {
-    background: #1e1569; }
+    background: #064e66; }
   .toggle-menu[aria-expanded="true"] span:nth-child(1) {
     top: 12px;
     width: 0%;
@@ -1013,7 +1008,8 @@ li.list-group-item.alpha-footer {
 .official-header {
   background-color: #f9f9fa;
   padding: 5px 0 5px 0;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 1px solid #e1e0e3; }
   .official-header .container {
     display: flex;
     flex-wrap: wrap;
@@ -1029,19 +1025,25 @@ li.list-group-item.alpha-footer {
     align-items: center; }
     .official-header .ofiicial-logo .cagov-logo {
       margin: 0 10px; }
+      .official-header .ofiicial-logo .cagov-logo:focus {
+        outline: 2px solid #fec02f; }
   .official-header svg {
     padding: 0; }
     .official-header svg .ca {
       fill: #fec02f; }
     .official-header svg .gov {
-      fill: #1e1569; }
+      fill: #064e66; }
   .official-header .official-tag {
-    margin: 0 10px; }
+    margin: 0 10px;
+    font-size: 1rem; }
   .official-header .official-languages a {
+    font-size: 1rem;
     color: #000;
     padding: 0 0.5rem 0 0.5rem; }
     .official-header .official-languages a:hover {
-      color: #1e1569; }
+      color: #064e66; }
+    .official-header .official-languages a:focus {
+      outline: 2px solid #fec02f; }
   .official-header .official-languages {
     display: flex;
     flex-wrap: wrap; }
@@ -1054,7 +1056,7 @@ li.list-group-item.alpha-footer {
       background-color: #fff;
       transition: transform .3s; }
       .official-header .official-languages button.offcial-more:hover {
-        color: #1e1569; }
+        color: #064e66; }
       .official-header .official-languages button.offcial-more[aria-expanded="false"] .caret-down {
         transition: all .3s; }
         .official-header .official-languages button.offcial-more[aria-expanded="false"] .caret-down svg {
@@ -1078,7 +1080,7 @@ li.list-group-item.alpha-footer {
     .official-header .official-languages .dropdown-content {
       background-clip: padding-box;
       background-color: #fff;
-      border: 1px solid #004abc;
+      border: 1px solid #2f4c2c;
       border-radius: 0.25rem;
       padding: 15px;
       position: absolute;
@@ -1110,9 +1112,9 @@ section.site-footer .container {
   padding: 1rem; }
 
 section.site-footer a {
-  color: #004abc; }
+  color: #064e66; }
   section.site-footer a:hover {
-    color: #ff8000; }
+    color: #064e66; }
   section.site-footer a:focus {
     outline: 2px solid #fec02f; }
 
@@ -1140,9 +1142,9 @@ section.site-footer .footer-social-links {
     padding-left: .3rem;
     transition: all 0.3s ease; }
     section.site-footer .footer-social-links a svg path {
-      fill: #004abc; }
+      fill: #064e66; }
     section.site-footer .footer-social-links a:hover svg path {
-      fill: #1e1569; }
+      fill: #2f4c2c; }
 
 @media (min-width: 991px) {
   .footer-secondary-links, section.site-footer .container {
@@ -1179,7 +1181,7 @@ footer .container {
   padding: 1rem; }
 
 footer a:hover {
-  color: #1e1569; }
+  color: #064e66; }
 
 footer a:focus {
   outline: 2px solid #fec02f; }
@@ -1198,7 +1200,7 @@ footer .bg-light-grey svg {
   footer .bg-light-grey svg .ca {
     fill: #fec02f; }
   footer .bg-light-grey svg .gov {
-    fill: #1e1569; }
+    fill: #064e66; }
 
 footer .cagov-logo {
   padding: 5px 2rem 5px 0; }
@@ -1227,7 +1229,7 @@ footer .copyright {
   .navigation .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 12px 16px 13px 16px;
+    padding: 0 16px 0 16px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1237,9 +1239,30 @@ footer .copyright {
     display: none; }
   .navigation.show {
     display: block !important; }
+  .navigation nav {
+    display: flex;
+    flex-direction: column; }
+    .navigation nav a {
+      color: #064e66;
+      text-decoration: none;
+      font-size: 1.125rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem; }
+      .navigation nav a:hover {
+        text-decoration: underline; }
+      .navigation nav a:focus {
+        outline: 2px solid #fec02f; }
 
 @media (min-width: 768px) {
   .navigation {
-    display: block !important; } }
+    display: block; }
+    .navigation nav {
+      flex-direction: row; }
+      .navigation nav a {
+        padding-right: 2.3rem;
+        padding-left: 5px;
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 13px; } }
 
 /*# sourceMappingURL=index.css.map */

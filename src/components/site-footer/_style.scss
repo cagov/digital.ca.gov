@@ -11,9 +11,9 @@ section.site-footer {
 	}
 
 	a {
-		color: $primary;
+		color: $primary-dark;
 		&:hover {
-			color: $secondary-dark;
+			color: $primary-dark;
 		}
 		&:focus {
 			outline: 2px solid $secondary;
@@ -48,11 +48,11 @@ section.site-footer {
 			padding-left: .3rem;
 			transition: all 0.3s ease;
 			svg path {
-				fill: $primary;
+				fill: $primary-dark;
 			}
 			&:hover {
 				svg path {
-					fill: $primary-dark;
+					fill: $primary;
 				}
 			}
 		}

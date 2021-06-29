@@ -6,11 +6,10 @@
 	.container {
 		max-width: $w-lg;
 		margin: 0 auto;
-		padding: 5px 0 0 0;
+		padding: 10px 0 0 15px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
-		align-items: center;
 		position: relative;
 	}
 	.logo {
@@ -24,12 +23,9 @@
 		margin-left: 10px;
 	}
 	.branding-logo {
-		flex: 1 0 650px;
 		color: $black;
 		text-decoration: none;
 		margin-left: 10px;
-		margin-bottom: 10px;
-		margin-top: 10px;
 		&:focus {
 			outline: 2px solid $secondary;
 		}
@@ -37,24 +33,25 @@
 			padding-left: 5px;
 			display: inline-block;
 
-			.logo-state {
-				font-size: $small-text;
-				margin: 0;
-				padding: 0;
-				height: 20px;
-				line-height: 1.2em;
-				transition: all 0.3s;
-				display: block;
-			}
+			
 			.logo-dept {
-				font-size: 1.75rem;
+				font-size: 1.2rem;
 				font-weight: 700;
 				margin: 0;
 				padding: 0;
-				height: 24px;
-				line-height: 1.2em;
 				transition: all 0.3s;
 				display: block;
+				margin-top: -3px;
+			}
+			.logo-state {
+				font-size:.7rem;
+				margin: 0;
+				margin-top: 3px;
+				padding: 0;
+				transition: all 0.3s;
+				display: block;
+				letter-spacing: 2px;
+
 			}
 		}
 	}

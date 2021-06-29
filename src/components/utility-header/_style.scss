@@ -4,6 +4,7 @@
 	background-color: $gray-100;
 	padding: 5px 0 5px 0;
 	width: 100%;
+	border-bottom: 1px solid $gray-300;
 
 	.container {
 		display: flex;
@@ -23,6 +24,9 @@
 
 		.cagov-logo {
 			margin:0 10px;
+			&:focus {
+				outline: 2px solid $secondary;
+			}
 		}
 	}
 
@@ -38,14 +42,19 @@
 
 	.official-tag {
 		margin: 0 10px;
+		font-size: 1rem;
 	}
 
 	.official-languages a {
+		font-size: 1rem;
 		color: $black;
 		padding: 0 0.5rem 0 0.5rem;
 
 		&:hover {
 			color: $primary-dark;
+		}
+		&:focus {
+			outline: 2px solid $secondary;
 		}
 	}
 
