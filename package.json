@@ -3,11 +3,20 @@
   "version": "1.0.0",
   "description": "Office of Digital Innovation website",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "@cagov/accordion": "^2.0.11",
+    "@cagov/pagerating": "^2.0.0"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "rollup-plugin-terser": "^7.0.2"
+  },
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "start": "npx @11ty/eleventy --serve"
+    "rollup": "rollup --config src/rollup.config.js",
+    "build": "npm run rollup && npx @11ty/eleventy",
+    "start": "npm run rollup && npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
